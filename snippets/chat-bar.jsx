@@ -55,8 +55,8 @@ export const ChatBar = ({
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="20"
+        height="20"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -196,7 +196,7 @@ export const ChatBar = ({
                   maxHeight: "12rem",
                   marginTop: "0.25rem",
                   color: "#FFFFFF",
-                  minHeight: "4rem",
+                  minHeight: "5rem",
                 }}
                 value={query}
                 onFocus={() => setIsFocused(true)}
@@ -224,11 +224,11 @@ export const ChatBar = ({
                     height: "2rem",
                     width: "2rem",
                     borderRadius: "0.75rem",
-                    backgroundColor: "#3b82f6",
+                    backgroundColor: "white",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "white",
+                    color: "black",
                     transition: "background-color 0.15s ease-in-out",
                     border: "none",
                     cursor: "pointer",
@@ -246,13 +246,13 @@ export const ChatBar = ({
                   onMouseEnter={(e) => {
                     const target = e.target;
                     if (!target.disabled) {
-                      target.style.backgroundColor = "#2563eb";
+                      target.style.backgroundColor = "#f3f4f6";
                     }
                   }}
                   onMouseLeave={(e) => {
                     const target = e.target;
                     if (!target.disabled) {
-                      target.style.backgroundColor = "#3b82f6";
+                      target.style.backgroundColor = "white";
                     }
                   }}
                 >
